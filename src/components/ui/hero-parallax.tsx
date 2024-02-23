@@ -80,11 +80,11 @@ export const Header = () => {
             />
             <div className="flex mt-8">
                 <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600" variant="default" size="lg" asChild>
-                    <Link href="/">Contact Us</Link>
+                    <Link href="/#contact">Contact Us</Link>
                 </Button>
                 <div className="w-8" />
                 <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600" variant="default" size="lg" asChild>
-                    <Link href="/">Our Projects</Link>
+                    <Link href="/#projects">Our Projects</Link>
                 </Button>
             </div>
         </div>

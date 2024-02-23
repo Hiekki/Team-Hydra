@@ -69,7 +69,7 @@ export const Tabs = ({
                     </button>
                 ))}
             </div>
-            <FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={cn('mt-32', contentClassName)} />
+            <FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={cn('mt-24', contentClassName)} />
         </>
     );
 };
