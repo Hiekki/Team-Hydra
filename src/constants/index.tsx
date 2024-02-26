@@ -15,14 +15,14 @@ export const products = [
 ];
 
 export const team = [
-    { title: 'Jake (JakeyPrime)', description: 'Founder & CEO' },
-    { title: 'Freddy (Profit)', description: 'Chief Technical Officer' },
-    { title: 'Panther', description: 'Chief Community Coordinator' },
-    { title: 'Ghoul', description: 'Head of Staff' },
-    { title: 'Manu', description: 'Head of Support' },
-    { title: 'Tanner (Sticks)', description: 'Bent Developer' },
-    { title: 'Virt', description: 'Documentation Specialist' },
-    { title: 'Jamisen (Untuned)', description: 'lil bitch' },
+    { title: 'Jake (JakeyPrime)', description: 'Founder & CEO', link: '/team/jake.png' },
+    { title: 'Freddy (Profit)', description: 'Chief Technical Officer', link: '/team/profit.png' },
+    { title: 'Panther', description: 'Chief Community Coordinator', link: '/team/panther2.png' },
+    { title: 'Ghoul', description: 'Head of Staff', link: '/team/ghoul.png' },
+    { title: 'Manu', description: 'Head of Support', link: '/team/manu.png' },
+    { title: 'Tanner (Sticks)', description: 'Bent Developer', link: '/team/sticks.png' },
+    { title: 'Virt', description: 'Documentation Specialist', link: '/team/virt.png' },
+    { title: 'Jamisen (Untuned)', description: 'lil bitch', link: '/team/untuned.png' },
 ];
 
 export const tabs = [
@@ -35,7 +35,7 @@ export const tabs = [
                     <h1>AppBot</h1>
                     <Image src={'/projects/appbot.png'} height="70" width="70" className="" alt={'AppBot'} />
                 </div>
-                <p className="flex text-lg">
+                <p className="flex text-lg mb-20">
                     AppBot is the latest and greatest publicly available Discord bot created fully by Team Hydra. It is a bot that helps you
                     manage all sorts of applications, forms, or anything else you can think of within your community, and keeping both
                     responses and users inside your community instead of sent to an external website. <br />
@@ -52,27 +52,6 @@ export const tabs = [
         ),
     },
     {
-        title: 'FeedBot',
-        value: 'feedbot',
-        content: (
-            <div className="flex flex-col flex-wrap justify-between items-start w-full overflow-hidden relative rounded-2xl p-10 font-bold text-white bg-gradient-to-br from-[#2770B4] to-[#24AED5]">
-                <div className="flex flex-row w-full justify-between text-xl md:text-4xl pb-4">
-                    <h1>FeedBot</h1>
-                    <Image src={'/projects/feedbot.png'} height="70" width="70" className="" alt={'FeedBot'} />
-                </div>
-                <p className="flex text-lg">
-                    FeedBot is a RSS feed watching bot that allows for extremely customizable posting in Discord, powered by an amazing
-                    dashboard. <br />
-                    <br /> FeedBot is a Team Hydra owned and maintained version of MonitoRSS, a popular RSS feed watching bot; but offering
-                    lower rate limits, no premium program, and no webhook support.
-                </p>
-                <Button className="bg-zinc-200 text-green-600 hover:bg-zinc-800 mt-8" variant="default" size="lg" asChild>
-                    <Link href="https://rss.hep.gg/">Check Out FeedBot</Link>
-                </Button>
-            </div>
-        ),
-    },
-    {
         title: 'HepBoat',
         value: 'hepboat',
         content: (
@@ -81,7 +60,7 @@ export const tabs = [
                     <h1>HepBoat</h1>
                     <Image src={'/projects/hepboat.png'} height="70" width="70" className="" alt={'HepBoat'} />
                 </div>
-                <p className="flex text-lg">
+                <p className="flex text-lg mb-10">
                     HepBoat is one of the most powerful moderation bots in the Discord community. It is a multipurpose bot that can be used
                     for many things. It can be configured extremely granularly to provide the finest control of filtering, punishing,
                     censoring, and more. It is also capable of providing a large amount of moderation tools for guilds with advanced
@@ -142,7 +121,7 @@ export const tabs = [
                     <h1>Hydra Modmail</h1>
                     <Image src={'/teamhydra.png'} height="70" width="70" className="" alt={'HydraModmail'} />
                 </div>
-                <p className="flex text-lg">
+                <p className="flex text-lg mb-40">
                     Hydra Modmail instances are bots that users can message to contact moderators of a Discord server, without having to
                     create tickets on an external platform.
                     <br /> <br />
@@ -228,7 +207,7 @@ export const tabs = [
                     <h1>Zira Music</h1>
                     <Image src={'/projects/ziramusic.png'} height="70" width="70" className="" alt={'ZiraMusic'} />
                 </div>
-                <p className="flex text-lg">
+                <p className="flex text-lg mb-10">
                     Zira music is a very simply modern take on a music bot. With no bells and whistles, we are aiming to provide a free and
                     easy to use music bot for everyone.
                     <br /> <br />
@@ -249,3 +228,51 @@ export const tabs = [
         ),
     },
 ];
+
+export const termsOfService = [
+    {
+        title: 'Terms',
+        description:
+            'By accessing this Website, accessible from teamhydra.dev, our service URLs and use of our Discord bots, you are agreeing to be bound by these service Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you should stop using our services, and using our bots as using them is considered agreement to these terms.',
+    },
+    {
+        title: 'Use License',
+        description:
+            'Permission is granted to use our services or bots for personal, or commercial use. This is the grant of a license, not a transfer of title, and under this license you may not:\n\n• modify or copy the materials, outside of service configuration;\n• use the materials for any commercial purpose or for any public display;\n• attempt to reverse engineer any software contained on Team Hydra\'s network or services;\n• remove any copyright or other proprietary notations from the materials; or\n• transferring the materials to another person or "mirror" the materials on any other server or service.\n\nThis will let Team Hydra terminate this license upon violations of any of these restrictions. Upon termination, your viewing right and usage will also be terminated will be blocked from any services and / or materials in your possession whether it is printed or electronic format.',
+    },
+    {
+        title: 'Disclaimer',
+        description:
+            'All the materials on Team Hydra\'s Website\'s, bots, and services are provided "as is". Team Hydra makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, Team Hydra does not make any representations concerning the accuracy or reliability of the use of the materials across our websites, services, and bots, or otherwise relating to such materials or any sites linked to our websites.',
+    },
+    {
+        title: 'Limitations',
+        description:
+            'Team Hydra or its suppliers will not be held accountable for any damages that will arise with the use or inability to use the materials across our network, even if Team Hydra or an authorize representative of our services have been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.',
+    },
+    {
+        title: 'Revisions and Errata',
+        description:
+            "The materials appearing on Team Hydra's services, bots, and websites may include technical, typographical, or photographic errors. Team Hydra will not promise that any of the materials across our network are accurate, complete, or current. Team Hydra may change the materials contained within at any time without notice. Team Hydra does not make any commitment to update the materials or services.",
+    },
+    {
+        title: 'Links',
+        description:
+            "Team Hydra has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by Team Hydra of the site. The use of any linked website is at the user's own risk.",
+    },
+    {
+        title: 'Site Terms of Use Modifications',
+        description:
+            "Team Hydra may revise these Terms of Use for it's bots, services, and websites, at any time without prior notice. By using any of our services, etc., you are agreeing to be bound by the current version of these Terms and Conditions of Use.",
+    },
+    {
+        title: 'Your Privacy',
+        description: 'Please read our Privacy Policy.',
+    },
+    {
+        title: 'Governing Law',
+        description:
+            "Any claim related to Team Hydra's Website shall be governed by the laws of Canada without regards to its conflict of law provisions.",
+    },
+];
+export const privacyPolicy = '';

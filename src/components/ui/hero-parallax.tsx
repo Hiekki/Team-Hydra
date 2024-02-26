@@ -53,7 +53,7 @@ export const HeroParallax = ({
                         <ProductCard product={product} translate={translateX} key={product.title} />
                     ))}
                 </motion.div>
-                <motion.div className="flex flex-row  mb-20 space-x-20 ">
+                <motion.div className="flex flex-row mb-20 space-x-20">
                     {secondRow.map((product) => (
                         <ProductCard product={product} translate={translateXReverse} key={product.title} />
                     ))}
@@ -71,7 +71,7 @@ export const HeroParallax = ({
 export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-            <TextGenerateEffect words="Team Hydra" className="text-2xl md:text-7xl font-bold text-green-600" />
+            <TextGenerateEffect words="Team Hydra" className="md:text-7xl text-3xl lg:text-9xl font-bold text-green-600" />
             <TextGenerateEffect
                 words="We make some of the largest projects on Discord, and are one of few who still takes projects while being one of the largest
                 Discord development teams in the world. We pride ourselves on everything we create, our vow to user privacy, and our

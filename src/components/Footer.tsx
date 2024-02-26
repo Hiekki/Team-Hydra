@@ -1,5 +1,17 @@
 'use client';
 import Image from 'next/image';
+import {
+    Drawer,
+    DrawerClose,
+    DrawerContent,
+    DrawerDescription,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerTitle,
+    DrawerTrigger,
+} from '@/components/ui/drawer';
+import SectionTitle from './SectionTitle';
+import { termsOfService } from '@/constants';
 
 const Footer = () => {
     const social_media = [
@@ -30,8 +42,50 @@ const Footer = () => {
         <section>
             <div className="flex w-full flex-col items-center justify-between border-t-[1px] border-t-[#3f3e45] pt-6 md:flex-row">
                 <p className="text-center font-poppins text-[18px] font-normal leading-[27px] text-white">
-                    Copyright © 2024. All Rights Reserved.
+                    © 2024 Team Hydra. All Rights Reserved.
                 </p>
+                <div>
+                    <p className="overflow-auto">
+                        <Drawer>
+                            <DrawerTrigger>
+                                <p className="text-green-600">Terms of Service</p>
+                            </DrawerTrigger>
+                            <DrawerContent className="h-2/4 overflow-auto">
+                                <DrawerHeader>
+                                    <SectionTitle title="Terms of Service" />
+                                    <DrawerDescription className="text-center">
+                                        {termsOfService.map((term, i) => (
+                                            <div key={term.title}>
+                                                <h1 className="text-zinc-400 text-4xl pb-4">{term.title}</h1>
+                                                <p className="text-white text-lg pb-4">{term.description}</p>
+                                            </div>
+                                        ))}
+                                    </DrawerDescription>
+                                </DrawerHeader>
+                                <DrawerFooter>
+                                    <DrawerClose></DrawerClose>
+                                </DrawerFooter>
+                            </DrawerContent>
+                        </Drawer>
+                        {'  '}|{'  '}
+                        <Drawer>
+                            <DrawerTrigger>
+                                <p className="text-green-600">Privacy Policy</p>
+                            </DrawerTrigger>
+                            <DrawerContent>
+                                <DrawerHeader>
+                                    <SectionTitle title="Privacy Policy" />
+                                    <DrawerDescription className="text-white text-center">
+                                        S'more legal bullshit, but privacy. i don't fucking know what's happening, let's try this too.
+                                    </DrawerDescription>
+                                </DrawerHeader>
+                                <DrawerFooter>
+                                    <DrawerClose></DrawerClose>
+                                </DrawerFooter>
+                            </DrawerContent>
+                        </Drawer>
+                    </p>
+                </div>
                 <div className="mt-6 flex flex-row md:mt-0">
                     {social_media.map((social, i) => (
                         <a key={social.id} href={social.link} target={social.target}>
