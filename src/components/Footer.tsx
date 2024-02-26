@@ -45,14 +45,14 @@ const Footer = () => {
                     © 2024 Team Hydra. All Rights Reserved.
                 </p>
                 <div>
-                    <p className="overflow-auto">
+                    <p className="">
                         <Drawer>
                             <DrawerTrigger>
-                                <p className="text-green-600">Terms of Service</p>
+                                <span className="text-green-600">Terms of Service</span>
                             </DrawerTrigger>
-                            <DrawerContent className="h-2/4 overflow-auto">
+                            <DrawerContent className="h-80 overflow-auto">
                                 <DrawerHeader>
-                                    <SectionTitle title="Terms of Service" />
+                                    <SectionTitle title="Terms of Service" footer={true} />
                                     <DrawerDescription className="text-center">
                                         {termsOfService.map((term, i) => (
                                             <div key={term.title}>
@@ -70,13 +70,14 @@ const Footer = () => {
                         {'  '}|{'  '}
                         <Drawer>
                             <DrawerTrigger>
-                                <p className="text-green-600">Privacy Policy</p>
+                                <span className="text-green-600">Privacy Policy</span>
                             </DrawerTrigger>
                             <DrawerContent>
                                 <DrawerHeader>
                                     <SectionTitle title="Privacy Policy" />
                                     <DrawerDescription className="text-white text-center">
-                                        S'more legal bullshit, but privacy. i don't fucking know what's happening, let's try this too.
+                                        S'more legal bullshit, but privacy. i don't fucking know what else to put here yet, but for now
+                                        let's add this.
                                     </DrawerDescription>
                                 </DrawerHeader>
                                 <DrawerFooter>
@@ -95,7 +96,7 @@ const Footer = () => {
                                 alt={social.id}
                                 width={21}
                                 height={21}
-                                className={`h-[21px] w-[21px] cursor-pointer object-contain ${i != social_media.length ? 'mr-6' : 'mr-0'} `}
+                                className={`h-[21px] w-[21px] cursor-pointer object-contain ${i != social_media.length ? 'mr-6' : 'mr-0'}`}
                             />
                         </a>
                     ))}

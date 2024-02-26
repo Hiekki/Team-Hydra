@@ -3,7 +3,6 @@ import Navbar from '@/components/Navbar';
 import SectionTitle from '@/components/SectionTitle';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { HeroParallax } from '@/components/ui/hero-parallax';
-import { SparklesCore } from '@/components/ui/sparkles';
 import { Tabs } from '@/components/ui/tabs';
 import { products, tabs, team } from '@/constants';
 import React from 'react';
@@ -16,11 +15,15 @@ export default function Home() {
                     <Navbar />
                 </div>
             </div>
-            <HeroParallax products={products} />
-            <SectionTitle title="Our Team" />
-            <div className="flex justify-center items-center w-full pb-40">
-                <HoverEffect items={team} />
-            </div>
+            <section id="home">
+                <HeroParallax products={products} />
+            </section>
+            <section id="team">
+                <SectionTitle title="Our Team" />
+                <div className="flex justify-center items-center w-full pb-40">
+                    <HoverEffect items={team} />
+                </div>
+            </section>
             <section id="projects" className="mb-40">
                 <SectionTitle title="Our Projects" />
                 <div className="h-[20rem] md:h-[40rem] [perspective:750px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start">
