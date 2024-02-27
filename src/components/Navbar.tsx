@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from './ui/button';
+import { Tooltip } from './ui/tooltip';
 
 const Navbar = () => {
     const navigation_links: Record<string, string>[] = [
@@ -16,10 +17,10 @@ const Navbar = () => {
     return (
         <div className="">
             <nav className="flex w-full items-center justify-between object-contain py-6 sticky">
-                <Image src={`/teamhydra.png`} alt="team hydra" width={145} height={25} className="w-[100px]" />
-                <ul className="hidden flex-1 list-none items-center justify-end sm:flex">
+                <Image src={`/teamhydra.png`} alt="team hydra" width={200} height={200} className="w-[60px] md:w-[100px]" />
+                <ul className="hidden flex-1 list-none items-center justify-end md:flex">
                     {navigation_links.map((nav, i) => (
-                        <li key={nav.id} className={`cursor-pointer font-poppins text-[16px] font-normal text-white mr-10`}>
+                        <li key={nav.id} className={`cursor-pointer text-[16px] font-normal text-white mr-4`}>
                             <a href={nav.href} className="">
                                 {nav.name}
                             </a>
@@ -42,17 +43,25 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className="flex flex-1 items-center justify-end sm:hidden">
+                <div className="flex flex-1 items-center justify-end md:hidden">
+                    <Image
+                        src={toggle ? '/icons/close.svg' : '/icons/menu.svg'}
+                        alt="menu"
+                        width={28}
+                        height={28}
+                        className="h-[28px] w-[28px] object-contain"
+                        onClick={() => setToggle((pre) => !pre)}
+                    />
                     <div
                         className={`${
                             toggle ? 'flex' : 'hidden'
-                        } bg-black-gradient sidebar absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
+                        } bg-black sidebar absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
                     >
                         <ul className="flex flex-1 list-none flex-col items-center justify-end">
                             {navigation_links.map((nav, i) => (
                                 <li
                                     key={nav.id}
-                                    className={`cursor-pointer font-poppins text-[16px] font-normal text-white ${
+                                    className={`cursor-pointer text-[16px] font-normal text-white ${
                                         i == navigation_links.length - 1 ? 'mb-0' : 'mb-4'
                                     }`}
                                 >

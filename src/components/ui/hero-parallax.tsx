@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { TextGenerateEffect } from './text-generate-effect';
 import { Button } from './button';
+import { useMediaQuery } from 'react-responsive';
 
 export const HeroParallax = ({
     products,
@@ -15,6 +16,8 @@ export const HeroParallax = ({
         thumbnail: string;
     }[];
 }) => {
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
     const firstRow = products.slice(0, 3);
     const secondRow = products.slice(3, 6);
     const thirdRow = products.slice(6, 9);
@@ -31,12 +34,12 @@ export const HeroParallax = ({
     const rotateX = useSpring(useTransform(scrollYProgress, [0, 0.2], [15, 0]), springConfig);
     const opacity = useSpring(useTransform(scrollYProgress, [0, 0.2], [0.2, 1]), springConfig);
     const rotateZ = useSpring(useTransform(scrollYProgress, [0, 0.2], [20, 0]), springConfig);
-    const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [-900, 500]), springConfig);
+    const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [isMobile ? -600 : -900, 25]), springConfig);
 
     return (
         <div
             ref={ref}
-            className="h-[225vh] items-center overflow-hidden antialiased relative flex flex-col self-auto [perspective:750px] [transform-style:preserve-3d]"
+            className="h-[175vh] items-center overflow-hidden antialiased relative flex flex-col self-auto [perspective:750px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
@@ -111,7 +114,7 @@ export const ProductCard = ({
                 y: -20,
             }}
             key={product.title}
-            className="group/product h-96 w-[30rem] relative flex-shrink-0"
+            className="group/product h-52 md:h-80 w-[8rem] md:w-[30rem] relative flex-shrink-0"
         >
             <Link href={product.link} className="block group-hover/product:shadow-2xl ">
                 <Image

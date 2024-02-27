@@ -10,7 +10,7 @@ import React from 'react';
 export default function Home() {
     return (
         <main className="bg-zinc-900 text-white min-h-screen">
-            <div className="sm:px-16 px-6 flex justify-center items-center">
+            <div className="md:px-16 px-6 flex justify-center items-center">
                 <div className="xl:max-w-[1280px] w-full z-[100]">
                     <Navbar />
                 </div>
