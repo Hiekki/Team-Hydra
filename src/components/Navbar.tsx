@@ -73,6 +73,26 @@ const Navbar = () => {
                                     <a href={`/#${nav.id}`}>{nav.name}</a>
                                 </li>
                             ))}
+                            <li>
+                                <Button
+                                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mt-4 text-black"
+                                    variant="default"
+                                    size="sm"
+                                    asChild
+                                >
+                                    <a href="https://accounts.hep.gg/">Staff Login</a>
+                                </Button>
+                            </li>
+                            <li>
+                                <Button
+                                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mt-4 text-black"
+                                    variant="default"
+                                    size="sm"
+                                    asChild
+                                >
+                                    <a href="https://hep.gg/discord">Join Our Discord</a>
+                                </Button>
+                            </li>
                         </ul>
                     </div>
                 </div>
