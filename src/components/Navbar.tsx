@@ -16,7 +16,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     return (
         <div className="">
-            <nav className="flex w-full items-center justify-between object-contain py-6 sticky">
+            <nav className="flex w-full items-center justify-between object-contain py-6">
                 <Image src={`/teamhydra.png`} alt="team hydra" width={200} height={200} className="w-[60px] md:w-[100px]" />
                 <ul className="hidden flex-1 list-none items-center justify-end md:flex">
                     {navigation_links.map((nav, i) => (
@@ -28,7 +28,7 @@ const Navbar = () => {
                     ))}
                     <li>
                         <Button
-                            className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mr-4"
+                            className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mr-4 text-black"
                             variant="default"
                             size="sm"
                             asChild
@@ -37,7 +37,12 @@ const Navbar = () => {
                         </Button>
                     </li>
                     <li>
-                        <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600" variant="default" size="sm" asChild>
+                        <Button
+                            className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black"
+                            variant="default"
+                            size="sm"
+                            asChild
+                        >
                             <a href="https://hep.gg/discord">Join Our Discord</a>
                         </Button>
                     </li>

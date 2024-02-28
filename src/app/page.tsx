@@ -3,8 +3,9 @@ import Navbar from '@/components/Navbar';
 import SectionTitle from '@/components/SectionTitle';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { HeroParallax } from '@/components/ui/hero-parallax';
+import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 import { Tabs } from '@/components/ui/tabs';
-import { products, tabs, team } from '@/constants';
+import { Products, Tabs as _Tabs, Team, Testimonials } from '@/constants';
 import React from 'react';
 
 export default function Home() {
@@ -16,18 +17,23 @@ export default function Home() {
                 </div>
             </div>
             <section id="home">
-                <HeroParallax products={products} />
+                <HeroParallax products={Products} />
             </section>
             <section id="team">
                 <SectionTitle title="Our Team" />
                 <div className="flex justify-center items-center w-full pb-40">
-                    <HoverEffect items={team} />
+                    <HoverEffect items={Team} />
                 </div>
             </section>
-            <section id="projects" className="mb-40">
+            <section id="projects" className="mb-40 md:mb-60">
                 <SectionTitle title="Our Projects" />
-                <div className="h-[20rem] md:h-[40rem] [perspective:750px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start">
-                    <Tabs tabs={tabs} />
+                <div className="h-screen md:h-[40rem] [perspective:750px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start">
+                    <Tabs tabs={_Tabs} />
+                </div>
+            </section>
+            <section id="testimonials" className="">
+                <div className="flex justify-center items-center w-full">
+                    <InfiniteMovingCards items={Testimonials} direction="left" speed="slow" />
                 </div>
             </section>
             <section id="contact" className="pt-20">

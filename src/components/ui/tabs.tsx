@@ -61,15 +61,15 @@ export const Tabs = ({
                             <motion.div
                                 layoutId="clickedbutton"
                                 transition={{ type: 'spring', bounce: 0.3, duration: 0.6 }}
-                                className={cn('absolute inset-0 bg-green-600 rounded-full', activeTabClassName)}
+                                className={cn(`absolute inset-0 bg-green-600 rounded-full`, activeTabClassName)}
                             />
                         )}
 
-                        <span className="relative block text-white">{tab.title}</span>
+                        <span className={`relative block ${active.value === tab.value ? 'text-black' : ''}`}>{tab.title}</span>
                     </button>
                 ))}
             </div>
-            <FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={cn('mt-24 px-10', contentClassName)} />
+            <FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={cn('mt-24 px-4', contentClassName)} />
         </>
     );
 };

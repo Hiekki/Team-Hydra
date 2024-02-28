@@ -11,7 +11,7 @@ import {
     DrawerTrigger,
 } from '@/components/ui/drawer';
 import SectionTitle from './SectionTitle';
-import { termsOfService } from '@/constants';
+import { TermsOfService } from '@/constants';
 
 const Footer = () => {
     const social_media = [
@@ -54,7 +54,7 @@ const Footer = () => {
                                 <DrawerHeader>
                                     <SectionTitle title="Terms of Service" footer={true} />
                                     <DrawerDescription className="text-center">
-                                        {termsOfService.map((term, i) => (
+                                        {TermsOfService.map((term, i) => (
                                             <div key={term.title}>
                                                 <h1 className="text-zinc-400 text-4xl pb-4">{term.title}</h1>
                                                 <p className="text-white text-lg pb-4">{term.description}</p>
@@ -76,8 +76,8 @@ const Footer = () => {
                                 <DrawerHeader>
                                     <SectionTitle title="Privacy Policy" />
                                     <DrawerDescription className="text-white text-center">
-                                        S'more legal bullshit, but privacy. i don't fucking know what else to put here yet, but for now
-                                        let's add this.
+                                        S&apos;more legal bullshit, but privacy. i don&apos;t fucking know what else to put here yet, but
+                                        for now let&apos;s add this.
                                     </DrawerDescription>
                                 </DrawerHeader>
                                 <DrawerFooter>

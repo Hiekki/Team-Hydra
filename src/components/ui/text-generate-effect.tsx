@@ -5,7 +5,7 @@ import { cn } from '@/utils/cn';
 
 export const TextGenerateEffect = ({ words, className }: { words: string; className?: string }) => {
     const [scope, animate] = useAnimate();
-    let wordsArray = words.split(' ');
+    let wordsArray = words.replace(/\'/g, '&apos;').split(' ');
     useEffect(() => {
         animate(
             'span',
@@ -17,7 +17,7 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
                 delay: stagger(0.05),
             }
         );
-    }, [scope.current]);
+    });
 
     const renderWords = () => {
         return (

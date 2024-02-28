@@ -34,7 +34,7 @@ export const HeroParallax = ({
     const rotateX = useSpring(useTransform(scrollYProgress, [0, 0.2], [15, 0]), springConfig);
     const opacity = useSpring(useTransform(scrollYProgress, [0, 0.2], [0.2, 1]), springConfig);
     const rotateZ = useSpring(useTransform(scrollYProgress, [0, 0.2], [20, 0]), springConfig);
-    const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [isMobile ? -600 : -900, 25]), springConfig);
+    const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [isMobile ? -600 : -850, 25]), springConfig);
 
     return (
         <div
@@ -74,7 +74,7 @@ export const HeroParallax = ({
 export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-            <TextGenerateEffect words="Team Hydra" className="md:text-7xl text-3xl lg:text-9xl font-bold text-green-600" />
+            <TextGenerateEffect words="Team Hydra" className="md:text-8xl text-3xl font-bold text-green-600" />
             <TextGenerateEffect
                 words="We make some of the largest projects on Discord, and are one of few who still takes projects while being one of the largest
                 Discord development teams in the world. We pride ourselves on everything we create, our vow to user privacy, and our
@@ -82,11 +82,11 @@ export const Header = () => {
                 className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200"
             />
             <div className="flex mt-8">
-                <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600" variant="default" size="lg" asChild>
+                <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black" variant="default" size="lg" asChild>
                     <Link href="/#contact">Contact Us</Link>
                 </Button>
                 <div className="w-8" />
-                <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600" variant="default" size="lg" asChild>
+                <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black" variant="default" size="lg" asChild>
                     <Link href="/#projects">Our Projects</Link>
                 </Button>
             </div>
