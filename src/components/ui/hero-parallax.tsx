@@ -82,11 +82,21 @@ export const Header = () => {
                 className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200"
             />
             <div className="flex mt-8">
-                <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black" variant="default" size="lg" asChild>
+                <Button
+                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black font-bold"
+                    variant="default"
+                    size="lg"
+                    asChild
+                >
                     <Link href="/#contact">Contact Us</Link>
                 </Button>
                 <div className="w-8" />
-                <Button className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black" variant="default" size="lg" asChild>
+                <Button
+                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black font-bold"
+                    variant="default"
+                    size="lg"
+                    asChild
+                >
                     <Link href="/#projects">Our Projects</Link>
                 </Button>
             </div>

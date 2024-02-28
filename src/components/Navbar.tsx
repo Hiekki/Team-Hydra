@@ -28,7 +28,7 @@ const Navbar = () => {
                     ))}
                     <li>
                         <Button
-                            className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mr-4 text-black"
+                            className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mr-4 text-black font-bold"
                             variant="default"
                             size="sm"
                             asChild
@@ -38,7 +38,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Button
-                            className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black"
+                            className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 text-black font-bold"
                             variant="default"
                             size="sm"
                             asChild
@@ -75,7 +75,7 @@ const Navbar = () => {
                             ))}
                             <li>
                                 <Button
-                                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mt-4 text-black"
+                                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mt-4 text-black font-bold"
                                     variant="default"
                                     size="sm"
                                     asChild
@@ -85,7 +85,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Button
-                                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mt-4 text-black"
+                                    className="bg-green-600 z-10 hover:bg-zinc-200 hover:text-green-600 mt-4 text-black font-bold"
                                     variant="default"
                                     size="sm"
                                     asChild
