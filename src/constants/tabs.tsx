@@ -12,7 +12,7 @@ export const Tabs = [
                     <h1>AppBot</h1>
                     <Image src={'/projects/appbot.png'} height="70" width="70" className="" alt={'AppBot'} />
                 </div>
-                <p className="flex text-lg mb-32 md:mb-20">
+                <p className="flex text-lg mb-48 md:mb-20">
                     AppBot is the latest and greatest publicly available Discord bot created fully by Team Hydra. It is a bot that helps you
                     manage all sorts of applications, forms, or anything else you can think of within your community, and keeping both
                     responses and users inside your community instead of sent to an external website. <br />
@@ -37,7 +37,7 @@ export const Tabs = [
                     <h1>HepBoat</h1>
                     <Image src={'/projects/hepboat.png'} height="70" width="70" className="" alt={'HepBoat'} />
                 </div>
-                <p className="flex text-lg mb-20 md:mb-16">
+                <p className="flex text-lg mb-24 md:mb-16">
                     HepBoat is one of the most powerful moderation bots in the Discord community. It is a multipurpose bot that can be used
                     for many things. It can be configured extremely granularly to provide the finest control of filtering, punishing,
                     censoring, and more. It is also capable of providing a large amount of moderation tools for guilds with advanced
@@ -93,12 +93,12 @@ export const Tabs = [
         title: 'Hydra ModMail',
         value: 'hydramodmail',
         content: (
-            <div className="flex flex-col flex-wrap justify-between items-start w-full overflow-hidden relative rounded-2xl p-10 font-bold text-white bg-gradient-to-br from-[#00A164] to-[#005432]">
+            <div className="flex flex-col flex-wrap justify-between items-start w-full overflow-hidden relative rounded-2xl p-10 font-bold text-white bg-gradient-to-br from-[#22B73D] to-[#35373E]">
                 <div className="flex flex-row w-full justify-between text-xl md:text-4xl pb-4">
                     <h1>Hydra Modmail</h1>
-                    <Image src={'/teamhydra.png'} height="70" width="70" className="" alt={'HydraModmail'} />
+                    <Image src={'/projects/hydramodmail.png'} height="70" width="70" className="" alt={'HydraModmail'} />
                 </div>
-                <p className="flex text-lg mb-60 md:mb-40">
+                <p className="flex text-lg mb-[25rem] md:mb-40">
                     Hydra Modmail instances are bots that users can message to contact moderators of a Discord server, without having to
                     create tickets on an external platform.
                     <br /> <br />
@@ -123,7 +123,7 @@ export const Tabs = [
                     <h1>KeyBot</h1>
                     <Image src={'/projects/keybot.png'} height="70" width="70" className="" alt={'KeyBot'} />
                 </div>
-                <p className="flex text-lg mb-8">
+                <p className="flex text-lg mb-16">
                     KeyBot is a simple project made for a friend of a friends server, but made so that other servers could utilize the same
                     features that might need it.
                     <br /> <br />
@@ -184,7 +184,7 @@ export const Tabs = [
                     <h1>Zira Music</h1>
                     <Image src={'/projects/ziramusic.png'} height="70" width="70" className="" alt={'ZiraMusic'} />
                 </div>
-                <p className="flex text-lg mb-10">
+                <p className="flex text-lg mb-24">
                     Zira music is a very simply modern take on a music bot. With no bells and whistles, we are aiming to provide a free and
                     easy to use music bot for everyone.
                     <br /> <br />

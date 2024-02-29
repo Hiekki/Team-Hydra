@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from './ui/button';
 import { Tooltip } from './ui/tooltip';
+import Link from 'next/link';
 
 const Navbar = () => {
     const navigation_links: Record<string, string>[] = [
@@ -17,7 +18,9 @@ const Navbar = () => {
     return (
         <div className="">
             <nav className="flex w-full items-center justify-between object-contain py-6">
-                <Image src={`/teamhydra.png`} alt="team hydra" width={200} height={200} className="w-[60px] md:w-[100px]" />
+                <Link href="/">
+                    <Image src={`/teamhydra.png`} alt="team hydra" width={200} height={200} className="w-[60px] md:w-[100px]" />
+                </Link>
                 <ul className="hidden flex-1 list-none items-center justify-end md:flex">
                     {navigation_links.map((nav, i) => (
                         <li key={nav.id} className={`cursor-pointer text-[16px] font-normal text-white mr-4`}>

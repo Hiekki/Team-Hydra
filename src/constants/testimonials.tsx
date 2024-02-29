@@ -1,18 +1,18 @@
 export const Testimonials = [
     {
-        quote: 'It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.',
-        name: 'Charles Dickens',
-        title: 'A Tale of Two Cities',
+        quote: 'I have been using Team Hydra Services for over 3 years & their services are nothing short of spectacular. I was one of the first guilds to invite Zira back upon relaunch in early 2019 & I am now one of the largest guilds using their products! Team Hydra is full of extremely passionate and supportive individuals, specializing in a plethora of fields. Their network and customer service exceed all my expectations and they are proper representation for the bot developing community.',
+        name: 'Softwilly',
+        title: 'YouTuber & Community Manager',
     },
     {
-        quote: "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-        name: 'William Shakespeare',
-        title: 'Hamlet',
+        quote: 'I am the biggest bent dev to exist, probably.',
+        name: 'SticksDev',
+        title: 'Bent Dev',
     },
     {
-        quote: 'All that we see or seem is but a dream within a dream.',
-        name: 'Edgar Allan Poe',
-        title: 'A Dream Within a Dream',
+        quote: 'I am gay fish.',
+        name: 'Untuned',
+        title: 'lil bitch',
     },
     {
         quote: 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',

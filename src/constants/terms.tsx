@@ -6,8 +6,23 @@ export const TermsOfService = [
     },
     {
         title: 'Use License',
-        description:
-            'Permission is granted to use our services or bots for personal, or commercial use. This is the grant of a license, not a transfer of title, and under this license you may not:\n\n• modify or copy the materials, outside of service configuration;\n• use the materials for any commercial purpose or for any public display;\n• attempt to reverse engineer any software contained on Team Hydra\'s network or services;\n• remove any copyright or other proprietary notations from the materials; or\n• transferring the materials to another person or "mirror" the materials on any other server or service.\n\nThis will let Team Hydra terminate this license upon violations of any of these restrictions. Upon termination, your viewing right and usage will also be terminated will be blocked from any services and / or materials in your possession whether it is printed or electronic format.',
+        description: (
+            <span>
+                Permission is granted to use our services or bots for personal, or commercial use. This is the grant of a license, not a
+                transfer of title, and under this license you may not:
+                <br />
+                <br />• modify or copy the materials, outside of service configuration;
+                <br />• use the materials for any commercial purpose or for any public display;
+                <br />• attempt to reverse engineer any software contained on Team Hydra's network or services;
+                <br />• remove any copyright or other proprietary notations from the materials; or
+                <br />• transferring the materials to another person or "mirror" the materials on any other server or service.
+                <br />
+                <br />
+                This will let Team Hydra terminate this license upon violations of any of these restrictions. Upon termination, your viewing
+                right and usage will also be terminated will be blocked from any services and / or materials in your possession whether it
+                is printed or electronic format.
+            </span>
+        ),
     },
     {
         title: 'Disclaimer',
@@ -36,7 +51,15 @@ export const TermsOfService = [
     },
     {
         title: 'Your Privacy',
-        description: 'Please read our Privacy Policy.',
+        description: (
+            <span>
+                Please read our Privacy Policy. You can view it at{' '}
+                <a href="/privacy" className="underline text-green-600">
+                    https://teamhydra.dev/policy
+                </a>
+                .
+            </span>
+        ),
     },
     {
         title: 'Governing Law',
