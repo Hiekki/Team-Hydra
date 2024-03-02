@@ -13,9 +13,9 @@ export const TermsOfService = [
                 <br />
                 <br />• modify or copy the materials, outside of service configuration;
                 <br />• use the materials for any commercial purpose or for any public display;
-                <br />• attempt to reverse engineer any software contained on Team Hydra's network or services;
+                <br />• attempt to reverse engineer any software contained on Team Hydra&apos;s network or services;
                 <br />• remove any copyright or other proprietary notations from the materials; or
-                <br />• transferring the materials to another person or "mirror" the materials on any other server or service.
+                <br />• transferring the materials to another person or &quot;mirror&quot; the materials on any other server or service.
                 <br />
                 <br />
                 This will let Team Hydra terminate this license upon violations of any of these restrictions. Upon termination, your viewing

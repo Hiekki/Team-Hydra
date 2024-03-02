@@ -3,8 +3,8 @@ export const PrivacyPolicy = [
         title: '',
         description: (
             <span>
-                This document entails the privacy policy and agreement that you accept when adding any of Team Hydra's bots to a server, or
-                as a member of such a server. This document does not supersede the{' '}
+                This document entails the privacy policy and agreement that you accept when adding any of Team Hydra&apos;s bots to a
+                server, or as a member of such a server. This document does not supersede the{' '}
                 <a href="https://discordapp.com/developers/docs/legal" className="text-green-600 underline">
                     Discord Developer Terms of Service
                 </a>
@@ -38,7 +38,7 @@ export const PrivacyPolicy = [
                 data will not be collected automatically, and only when a user interacts directly with our bots and services. When providing
                 data in this way, you forego any rights to the content of the data provided. <br />
                 <br />
-                • Links to external accounts, e-mail addresses, timezones, identification information (profiles / ID's)
+                • Links to external accounts, e-mail addresses, timezones, identification information (profiles / ID&apos;s)
                 <br />
                 • Server configurations, and settings
                 <br />
@@ -50,8 +50,8 @@ export const PrivacyPolicy = [
                 <br />
                 • Saved references, urls, or text (tags, playlists)
                 <br />
-                • Transaction ID's from payment gateways
-                <br />• Discord user, message, and server ID's to store configurations listed above
+                • Transaction ID&apos;s from payment gateways
+                <br />• Discord user, message, and server ID&apos;s to store configurations listed above
             </span>
         ),
     },
@@ -63,7 +63,7 @@ export const PrivacyPolicy = [
                 features are always opt-in, and thus this data will not be collected unless the corresponding feature is enabled. <br />
                 <br />
                 • Logs of chat messages (serverlogs - retained for 3 months) <br />
-                • List of a member's roles (role persistence) <br />
+                • List of a member&apos;s roles (role persistence) <br />
                 • Avatar URLs (Dashboard) <br />• Nickname data (Changelogging)
             </span>
         ),
@@ -96,17 +96,17 @@ export const PrivacyPolicy = [
         title: 'Agreement',
         description: (
             <span>
-                By adding any of Team Hydra's bots to your server or using these bots or services in any way, including partner services
-                that run on our infrastructure, you are consenting to the policies outlined in this document. In addition, you (the server
-                manager or service user) are agreeing to inform your members of the{' '}
+                By adding any of Team Hydra&apos;s bots to your server or using these bots or services in any way, including partner
+                services that run on our infrastructure, you are consenting to the policies outlined in this document. In addition, you (the
+                server manager or service user) are agreeing to inform your members of the{' '}
                 <a href="https://discordapp.com/developers/docs/legal" className="underline text-green-600">
                     Discord Developer Terms of Service
                 </a>{' '}
                 and the contents of this document. If you, the server manager, do not agree to this document, you may remove the bot(s) from
                 the server. If you, the server member, do not agree to this document, you may leave the server that contains the bot(s). If
-                you, the service user, do not agree to this document, you may revoke authorization of the application(s) in your 'Authorized
-                Apps' menu. All data related to your user will be deleted at your request or within 3-6 months after not being seen by our
-                services or bots, depending on said service or bot.
+                you, the service user, do not agree to this document, you may revoke authorization of the application(s) in your
+                &apos;Authorized Apps&apos; menu. All data related to your user will be deleted at your request or within 3-6 months after
+                not being seen by our services or bots, depending on said service or bot.
             </span>
         ),
     },
