@@ -37,7 +37,7 @@ export const Tabs = [
                     <h1>HepBoat</h1>
                     <Image src={'/projects/hepboat.png'} height="70" width="70" className="" alt={'HepBoat'} />
                 </div>
-                <p className="flex text-lg mb-24 md:mb-16">
+                <p className="flex text-lg mb-28 md:mb-16">
                     HepBoat is one of the most powerful moderation bots in the Discord community. It is a multipurpose bot that can be used
                     for many things. It can be configured extremely granularly to provide the finest control of filtering, punishing,
                     censoring, and more. It is also capable of providing a large amount of moderation tools for guilds with advanced
@@ -48,7 +48,7 @@ export const Tabs = [
                     If you want to find out if HepBoat is for you, be it regular HepBoat, HepBoat Prime, or even beta, you can check out the
                     docs by clicking the button below.
                 </p>
-                <div className="flex">
+                <div className="flex flex-col md:flex-row mx-auto md:mx-0">
                     <Button className="bg-zinc-200 text-black hover:bg-zinc-800 hover:text-white mt-8" variant="default" size="lg" asChild>
                         <Link href="https://hepbo.at/">Check Out HepBoat</Link>
                     </Button>
